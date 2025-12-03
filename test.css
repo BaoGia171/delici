@@ -1,0 +1,13 @@
+.form-group .error {
+    color: #ff4d4d;
+    font-size: 14px;
+    display: none;
+    margin-top: 5px;
+}
+
+/* Nếu input SAI → hiện dòng cảnh báo */
+.form-group input:invalid:not(:placeholder-shown) + .error {
+    display: block;
+}
+
+/* Nếu input ĐÚNG → dòng cảnh báo tự ẩn (display: none) */

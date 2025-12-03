@@ -1,0 +1,63 @@
+
+.title{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-text-yellow);
+    padding-bottom: 10px;
+    letter-spacing:8px;
+}
+h1{
+    font-family: var(--font-forum);
+    text-align: center;
+    color: var(--color-text-white);
+    font-size: 80px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.img_separator{
+    height: 25px;
+    width: 170px;
+    margin: 10px 0;
+  filter: brightness(0) invert(1);
+}
+.main_container_lookup{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/banner/banner-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+.container_title_lookup{
+    flex-direction: column; 
+}
+.container_lookup_input{
+    padding: 50px 0;
+    background-color: var(--color_background_black);
+}
+.lookup_input{
+    position: relative;
+    width: 50%;
+}
+.lookup_input button{
+    background-color: gray;
+    border-radius: 0 7px 7px 0;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.lookup_input input{
+    border: none;
+    border-radius: 7px;
+    padding: 20px 0 20px 10px;
+    width: 100%;
+}
+.lookup_input input:focus-within{
+    outline: none;
+    border: 1px solid #e4c290;
+}
+.lookup_input:focus-within button{
+    background-color: #e4c290;
+}

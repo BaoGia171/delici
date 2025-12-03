@@ -1,0 +1,30 @@
+.bg_black{
+    background-color: var(--color_background_black);
+}
+.bg_gray{
+    background-color: var(--color_background_gray);
+}
+.bg_gray_2{
+    background-color: var(--color_background_gray_2);
+}
+.bg_yellow{
+    background-color: var(--color_background_yellow);
+}
+.text_white{
+    color: var(--color-text-white);
+}
+.text_yellow{
+    color: var( --color-text-yellow);
+}
+.text_gray{
+    color: var(--color-text-gray);
+}
+.font_dmsan{
+    font-family: var(--font-dmsan);
+}
+.font_forum{
+    font-family: var(--font-forum);
+}
+.ob_cover{
+    object-fit: cover;
+}
