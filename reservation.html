@@ -4,9 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/global.css" />
-        <link rel="stylesheet" href="lookup.css" />
+        <link rel="stylesheet" href="./reservation.css" />
         <link rel="stylesheet" href="./css/custom.css" />
-        <title>LOKKUP</title>
+        <title>Reservation</title>
     </head>
     <body>
         <!-- ------HEADER------ -->
@@ -19,10 +19,10 @@
                         </div>
                         <div class="header_menu">
                             <ul class="menu_list">
-                                <li><a href="index.html">HOME</a></li>
                                 <li>
-                                    <a class="active" href="menu.html">MENU</a>
+                                    <a class="active" href="index.html">HOME</a>
                                 </li>
+                                <li><a href="menu.html">MENU</a></li>
                                 <li><a href="about.html">ABOUT</a></li>
                                 <li>
                                     <a href="reservation.html">RESERVATION</a>
@@ -60,9 +60,8 @@
                                         <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                                         <path
                                             d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"
-                                        />
-                                    </svg>
-                                    <span>0</span></a
+                                        /></svg>
+                                        <span>0</span></a
                                 >
                             </button>
                         </div>
@@ -77,25 +76,150 @@
         <!-- ------HEADER------ -->
         <!-- ------MAIN------ -->
         <div class="main_container">
-            <div class="main_container_lookup flex_center">
-                <div class="container_title_lookup flex_center">
-                    <span class="title font_dmsan">LOOKUP</span>
+            <div class="main_container_book flex_center">
+                <div class="container_title_book flex_center">
+                    <span class="title font_dmsan">BOOK YOUR TABLE </span>
                     <img
                         class="img_separator"
                         src="./img/product/separator.png"
                         alt=""
                     />
-                    <h1>ORDER LOOKUP</h1>
+                    <h1>Reservation</h1>
                 </div>
             </div>
-            <div class="container_lookup_input flex_center">
-                <div class="lookup_input"><input class="bg_gray text_yellow" type="text" name="text" placeholder="Look up phone number or email">
-                <button type="submit">Submit</button>
+            <div class="main_container_reservation bg_gray">
+                <div class="container_title_book flex_center">
+                    <span class="title font_dmsan">RESERVATION </span>
+                    <img
+                        class="img_separator"
+                        src="./img/product/separator.png"
+                        alt=""
+                    />
+                    <p class="text_white">
+                        Restaurant will be open for all days, Sunday night will
+                        be closed, All booking payment is secured with credit
+                        card, no charges will be aplly for online booking. no
+                        refundable.
+                    </p>
+                    <p class="text_white">
+                        Booking request
+                        <span class="text_yellow">+88-123-123456</span> or fill
+                        out the order form
+                    </p>
+                </div>
+                <div class="reserve_input">
+                    <div class="reserve_input_top flex_center">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            pattern="[A-za-z\s],{2,}"
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            required
+                        />
+                    </div>
+                    <div class="reserve_input_down flex_center">
+                        <div class="input_for_select">
+                            <select name="" id="">
+                                <option value="1 person">1 Person</option>
+                                <option value="2 person">2 Person</option>
+                                <option value="3 person">3 Person</option>
+                                <option value="4 person">4 Person</option>
+                            </select>
+                        </div>
+                        <input
+                            type="date"
+                            name="date"
+                            placeholder="Email"
+                            required
+                        />
+                        <div class="input_for_select">
+                            <select name="" id="">
+                                <option value="08:00am">08:00 am</option>
+                                <option value="09:00am">09:00 am</option>
+                                <option value="10:00am">10:00 am</option>
+                                <option value="11:00am">11:00 am</option>
+                                <option value="12:00am">12:00 am</option>
+                                <option value="01:00pm">01:00 pm</option>
+                                <option value="02:00pm">02:00 pm</option>
+                                <option value="03:00pm">03:00 pm</option>
+                                <option value="04:00pm">04:00 pm</option>
+                                <option value="05:00pm">05:00 pm</option>
+                                <option value="06:00pm">06:00 pm</option>
+                                <option value="07:00pm">07:00 pm</option>
+                                <option value="08:00pm">08:00 pm</option>
+                                <option value="09:00pm">09:00 pm</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reserve_button flex_center">
+                        <button class="bg_yellow flex_center" type="submit">
+                            BOOK A TABLE
+                        </button>
+                    </div>
+                </div>
+                <div class="main_container_icon flex_center">
+                    <div class="container_icon flex_center">
+                        <div class="icon_img">
+                            <img src="./img/icon/ny.png" alt="" />
+                        </div>
+                        <div class="icon_title">
+                            <h4>New York</h4>
+                            <p>
+                                Restaurant St, Delicious City, NY.
+                                <br />+88-123-123456 booking@domainname.com
+                            </p>
+                            <a href="">GET DIRECTION </a>
+                        </div>
+                    </div>
+                    <div class="container_icon flex_center">
+                        <div class="icon_img">
+                            <img src="./img/icon/ny.png" alt="" />
+                        </div>
+                        <div class="icon_title">
+                            <h4>Paris</h4>
+                            <p>
+                                Restaurant St, Delicious City, NY.
+                                <br />+88-123-123456 booking@domainname.com
+                            </p>
+                            <a href="">GET DIRECTION </a>
+                        </div>
+                    </div>
+                    <div class="container_icon flex_center">
+                        <div class="icon_img">
+                            <img src="./img/icon/ny.png" alt="" />
+                        </div>
+                        <div class="icon_title">
+                            <h4>Dubai</h4>
+                            <p>
+                                Restaurant St, Delicious City, NY.
+                                <br />+88-123-123456 booking@domainname.com
+                            </p>
+                            <a href="">GET DIRECTION </a>
+                        </div>
+                    </div>
+                    <div class="container_icon flex_center">
+                        <div class="icon_img">
+                            <img src="./img/icon/ny.png" alt="" />
+                        </div>
+                        <div class="icon_title">
+                            <h4>Toronto</h4>
+                            <p>
+                                Restaurant St, Delicious City, NY.
+                                <br />+88-123-123456 booking@domainname.com
+                            </p>
+                            <a href="">GET DIRECTION </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- ------MAIN------ -->
-        <!-- ------FOOTER------ -->
+          <!-- ------FOOTER------ -->
         <footer>
             <div class="footer">
                 <div class="container_main_footer flex_center">
@@ -194,23 +318,5 @@
             </div>
         </footer>
         <!-- ------FOOTER------ -->
-        <div class="back_to_top">
-            <a href="#top">
-                <button type="button">
-                    <svg
-                        width="20"
-                        height="20"
-                        fill="red"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 640 640"
-                    >
-                        <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path
-                            d="M297.4 201.4C309.9 188.9 330.2 188.9 342.7 201.4L502.7 361.4C515.2 373.9 515.2 394.2 502.7 406.7C490.2 419.2 469.9 419.2 457.4 406.7L320 269.3L182.6 406.6C170.1 419.1 149.8 419.1 137.3 406.6C124.8 394.1 124.8 373.8 137.3 361.3L297.3 201.3z"
-                        />
-                    </svg>
-                </button>
-            </a>
-        </div>
     </body>
 </html>

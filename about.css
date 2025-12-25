@@ -1,0 +1,142 @@
+
+.title{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-text-yellow);
+    padding-bottom: 10px;
+    letter-spacing:8px;
+}
+h1{
+    font-family: var(--font-forum);
+    text-align: center;
+    color: var(--color-text-white);
+    font-size: 80px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.img_separator{
+    height: 25px;
+    width: 170px;
+    margin: 10px 0;
+}
+.main_container_about{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)),
+    url(./img/banner/banner-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+.container_title_about{
+    flex-direction: column; 
+}
+.container_title_amazing{
+    flex-direction: column;
+}
+.about_title {
+    font-family: var(--font-forum);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.container_info_introduce{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 27px;
+    width: 100%;
+}
+.container_info_founder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container_info_founder p ,span{
+    font-size: 16px;
+    font-family: var(--font-dmsan);
+}
+.container_info_founder,.container_info_restaurant,.container_info_time{
+    width: 30%;
+    height: 550px;
+    overflow: hidden;
+}
+.restaurant_img{
+    height: 100%;
+}
+.container_info_time{
+border: 1px solid #e4c290;
+}
+.container_lunch_time{
+    gap: 30px;
+    flex-direction: column;
+    border: 1px solid #e4c290;
+    padding:83px 70px;
+    text-align: center;
+}
+.container_lunch_time h4{
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-family: var(--font-dmsan);
+}
+
+.info_signature{
+    width: 30%;
+}
+.main_container_stats{
+    gap: 280px;
+}
+.amount_total span{
+    font-size: 50px;
+    font-weight: 300;
+    font-family: var(--font-forum);
+}
+.main_contaienr_daily_order p{
+    font-weight: 600;
+    font-family: var(--font-dmsan);
+    font-size:18px;
+   width: 50px;
+}
+
+.chef_img ,.chef_award{
+    width: 50%;
+}
+
+.container_title_service h1{
+    font-family: var(--font-forum);
+    text-align: center;
+    color: var(--color-text-white);
+    font-size: 80px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.img_separator{
+    height: 25px;
+    width: 170px;
+    margin: 10px 0;
+}
+.container_title_service{
+    flex-direction: column; 
+}
+
+.icon_left,.icon_left{
+    width: 7%;
+    height: 7%;
+}
+
+.main_service{
+    width: 300px;
+}
+.service_food_img{
+    z-index: 2;
+    position: relative;
+    
+}
+
+.service_img_after{
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+    z-index: 1;
+}

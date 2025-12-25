@@ -115,47 +115,12 @@ button {
  }
 /* <!-- ------HEADER------ --> */
 
-/* <!-- ------MAIN------ --> */
-.padding_up_down{
-    padding: 90px 0;
-}
-.yellow_title{
-    letter-spacing:5px;
-    font-size: 15px;
-    font-weight: 800;
-    font-family: var(--font-dmsan);
-}
-.white_title{
-    font-size: 50px;
-    font-weight: 300;
-    font-family: var(--font-forum);
-}
-.view_menu_title{
-    font-size: 40px;
-    font-weight: 100;
-    font-family: var(--font-forum);
-}
-.name_of_menu{
-    font-size: 20px;
-    font-family: var(--font-forum);
-}
-.chef_name{
-    font-size: 33px;
-    font-weight: 300;
-    font-family: var(--font-forum);
-}
-.chef_title{
-    font-size: 15px;
-    font-weight: 600;
-    font-family: var(--font-dmsan);
-}
-/* <!-- ------MAIN------ --> */
-/* <!-- ------FOOTER------ --> */
+
 /* <!-- ------FOOTER------ --> */
 .footer{
     background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./img/banner/image-4.jpg);
+    url(../img/banner/image-4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -1,0 +1,98 @@
+.title{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-text-yellow);
+    padding-bottom: 10px;
+    letter-spacing:8px;
+}
+.container_icon h4{
+    padding-top: 15px;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: var(--font-forum);
+    color: var(--color-text-white);
+}
+.container_icon p{
+    padding: 15px 0;
+    font-family: var(--font-dmsan);
+    color: var(--color-text-gray);
+}
+.container_icon a{
+    font-weight: 500;
+    font-family: var(--font-dmsan);
+    color: var(--color-text-yellow);
+}
+.container_title_book h1{
+    font-family: var(--font-forum);
+    text-align: center;
+    color: var(--color-text-white);
+    font-size: 80px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.img_separator{
+    height: 25px;
+    width: 170px;
+    margin: 10px 0;
+}
+.main_container_book{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/banner/banner-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+.container_title_book{
+    flex-direction: column; 
+}
+.reserve_input_top ,.reserve_input_down{
+    gap: 20px;
+}
+.reserve_input_top input{
+    width: 40%;
+    height: 55px;
+}
+.reserve_input_down{
+    padding: 50px 0;
+}
+.reserve_input_down input{
+    /* background-color: var(--color_background_gray); */
+    width: 23.5%;
+    height: 55px;
+}
+.input_for_select select{
+    height: 55px;
+    width: 100%;
+}
+.input_for_select{
+    width: 27.5%;
+    position: relative;
+}
+.arrow_button{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.reserve_button button{
+    width: 30%;
+    height: 55px;
+}
+
+.main_container_icon{
+    gap: 80px;
+    padding: 80px 0;
+    max-width: auto;
+}
+.container_icon{
+    flex-direction: column;
+    width: 17%;
+}
+.icon_img{
+    width: 50%;
+    height: 50%;
+}
+.icon_title{
+    text-align: center;
+}
+
