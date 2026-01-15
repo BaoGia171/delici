@@ -62,8 +62,50 @@ button {
     gap: 20px;
 }
 .menu_list {
+    gap: 20px;
+}
+.menu_list li:nth-child(2){
+    position: relative;
+    cursor: pointer;
+    
+}
+.menu_list li:nth-child(2) ul{
+opacity: 0;
+visibility: hidden;
+transition: 0.5s;
+cursor: pointer;
+}
+.menu_list li:nth-child(2):hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+.menu_hover{
+    position: absolute;
+    width: 1000px;
+    padding: 50px;
+    left: 50%;
+    top: 15px;
+    
+}
+.menu_hover_img{
     display: flex;
     gap: 20px;
+}
+.menu_hover_img li{
+    
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.menu_hover_img li img{
+    
+    transition: 0.5s;
+}
+.menu_hover_img li:hover img{
+    transform: scale(0.9);
+    transition: 0.5s;
 }
 .header_right {
     gap: 30px;
@@ -100,7 +142,7 @@ button {
     bottom: -5px;
     left: 0;
     content: "";
-    width:0%;
+    width:0;
     height: 1px;
     background-color: #e4c290;
     transition: 0.5s;
@@ -206,12 +248,24 @@ button {
     left: 5px;
 }
 .footer_button button{
+
 position: absolute;
 top: 0;
 right: 0;
 height: 100%;
 width: 35%;
 background-color: #e4c290;
+border: 1px solid var(--color-text-yellow);
+transition: 1s;
+}
+.button_down:hover button {
+    
+    background-color:var(--color-background-black);
+    color: var(--color-text-white);
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--color-text-yellow);
+    transition: 0.5s;
 }
 .code_by p{
     text-align: center;
@@ -227,5 +281,4 @@ background-color: #e4c290;
     background-color: pink;
     
 }
-
 

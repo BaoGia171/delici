@@ -1,4 +1,5 @@
 
+/* --------MAIN-------- */
 .title{
     font-size: 17px;
     font-weight: 600;
@@ -6,19 +7,16 @@
     padding-bottom: 10px;
     letter-spacing:8px;
 }
-h1{
-    font-family: var(--font-forum);
-    text-align: center;
-    color: var(--color-text-white);
-    font-size: 80px;
-    font-weight: 300;
-    margin: 10px 0;
-}
+
 .img_separator{
     height: 25px;
     width: 170px;
     margin: 10px 0;
 }
+
+
+   /* MAIN CONTAINER - ABOUT */
+
 .main_container_about{
     background:
     linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)),
@@ -27,17 +25,70 @@ h1{
     background-size: cover;
     height: 550px;
 }
+
 .container_title_about{
     flex-direction: column; 
 }
+
+.container_title_about h1{
+    font-family: var(--font-forum);
+    text-align: center;
+    color: var(--color-text-white);
+    font-size: 80px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+
+   /* MAIN CONTAINER - AMAZING */
+
 .container_title_amazing{
+    gap: 20px;
     flex-direction: column;
 }
+
+.container_title_amazing span{
+    color: var(--color-text-yellow);
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.container_title_amazing h3{
+    color: var(--color-text-white);
+    font-size: 50px;
+    font-family: var(--font-forum);
+    font-weight: 300;
+}
+
+.container_title_amazing p{
+    text-align: center;
+    color: var(--color-text-white);
+    font-family: var(--font-dmsan);
+}
+
+.container_title_amazing button{
+    background-color: var(--color_background_yellow);
+    width: 250px;
+    height: 55px;
+    border: 1px solid var(--color-text-yellow);
+transition: 1s
+}
+.button_down:hover button{
+    color: var(--color-text-white);
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--color-text-yellow);
+    transition: 0.5s;
+}
+
 .about_title {
     font-family: var(--font-forum);
     font-weight: 400;
     font-size: 30px;
 }
+
+
+   /* INFO INTRODUCE */
 
 .container_info_introduce{
     display: flex;
@@ -47,26 +98,41 @@ h1{
     gap: 27px;
     width: 100%;
 }
+
 .container_info_founder{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .container_info_founder p ,span{
     font-size: 16px;
     font-family: var(--font-dmsan);
 }
-.container_info_founder,.container_info_restaurant,.container_info_time{
+
+.container_info_founder,
+.container_info_restaurant,
+.container_info_time{
     width: 30%;
     height: 550px;
     overflow: hidden;
 }
+
 .restaurant_img{
     height: 100%;
 }
-.container_info_time{
-border: 1px solid #e4c290;
+
+.info_signature{
+    width: 30%;
 }
+
+
+   /* TIME / CONTACT */
+
+.container_info_time{
+    border: 1px solid #e4c290;
+}
+
 .container_lunch_time{
     gap: 30px;
     flex-direction: column;
@@ -74,63 +140,105 @@ border: 1px solid #e4c290;
     padding:83px 70px;
     text-align: center;
 }
+
 .container_lunch_time h4{
     padding-bottom: 10px;
     font-weight: 700;
     font-family: var(--font-dmsan);
 }
 
-.info_signature{
-    width: 30%;
-}
+
+   /* STATS */
+
 .main_container_stats{
+    padding-bottom: 50px;
     gap: 280px;
 }
+
 .amount_total span{
     font-size: 50px;
     font-weight: 300;
     font-family: var(--font-forum);
 }
+
 .main_contaienr_daily_order p{
     font-weight: 600;
     font-family: var(--font-dmsan);
     font-size:18px;
-   width: 50px;
+    width: 50px;
 }
 
-.chef_img ,.chef_award{
+
+   /* EXPERIENCE / CHEF */
+
+.chef_img,
+.chef_award{
     width: 50%;
+}
+
+
+   /* SERVICE */
+
+.main_container_service{
+    padding: 100px;
+}
+
+.container_title_service{
+    flex-direction: column; 
 }
 
 .container_title_service h1{
     font-family: var(--font-forum);
     text-align: center;
     color: var(--color-text-white);
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 300;
     margin: 10px 0;
 }
-.img_separator{
-    height: 25px;
-    width: 170px;
-    margin: 10px 0;
-}
-.container_title_service{
-    flex-direction: column; 
+
+.main_restaurant_service{
+    margin-top: 100px;
+    gap: 50px;
 }
 
-.icon_left,.icon_left{
-    width: 7%;
-    height: 7%;
+
+   /* SERVICE CONTENT */
+
+.content_icon{
+    padding: 40px 0;
+    gap: 25px;
 }
+
+.content_text h4{
+    padding-bottom: 10px;
+    font-family: var(--font-forum);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.content_text p{
+    color: var(--color-text-gray);
+    font-family: var(--font-dmsan);
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.icon img{
+    border-radius: 50%;
+    background-color:var(--color_background_gray);
+}
+
+
+   /* MAIN SERVICE IMAGE */
 
 .main_service{
     width: 300px;
-}
-.service_food_img{
-    z-index: 2;
     position: relative;
-    
+}
+
+.service_food_img{
+    position: relative;
+    z-index: 2;
 }
 
 .service_img_after{
@@ -140,3 +248,11 @@ border: 1px solid #e4c290;
     transform: translateX(-50%);
     z-index: 1;
 }
+
+
+   /* ICON */
+
+.icon_left,.icon_left{
+    height: 7%;
+}
+/* --------MAIN-------- */

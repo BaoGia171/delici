@@ -1,3 +1,4 @@
+/* TITLE */
 .title{
     font-size: 17px;
     font-weight: 600;
@@ -5,36 +6,14 @@
     padding-bottom: 10px;
     letter-spacing:8px;
 }
-.container_icon h4{
-    padding-top: 15px;
-    font-size: 25px;
-    font-weight: 300;
-    font-family: var(--font-forum);
-    color: var(--color-text-white);
-}
-.container_icon p{
-    padding: 15px 0;
-    font-family: var(--font-dmsan);
-    color: var(--color-text-gray);
-}
-.container_icon a{
-    font-weight: 500;
-    font-family: var(--font-dmsan);
-    color: var(--color-text-yellow);
-}
-.container_title_book h1{
-    font-family: var(--font-forum);
-    text-align: center;
-    color: var(--color-text-white);
-    font-size: 80px;
-    font-weight: 300;
-    margin: 10px 0;
-}
+
 .img_separator{
     height: 25px;
     width: 170px;
     margin: 10px 0;
 }
+
+/* MAIN CONTAINER BOOK */
 .main_container_book{
     background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -43,56 +22,117 @@
     background-size: cover;
     height: 550px;
 }
+
+/* CONTAINER TITLE BOOK */
 .container_title_book{
+    padding: 80px 0;
     flex-direction: column; 
 }
-.reserve_input_top ,.reserve_input_down{
+
+.container_title_book h1{
+    font-family: var(--font-forum);
+    text-align: center;
+    color: var(--color-text-white);
+    font-size: 80px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.container_title_book h2{
+    font-weight: 300;
+    font-size: 60px;
+}
+.container_title_book:nth-child(1) p{
+    padding: 30px 0 0px 0;
+}
+/* RESERVE INPUT */
+.reserve_input_top,
+.reserve_input_down{
     gap: 20px;
 }
+
 .reserve_input_top input{
     width: 40%;
     height: 55px;
 }
+
 .reserve_input_down{
     padding: 50px 0;
 }
+
 .reserve_input_down input{
-    /* background-color: var(--color_background_gray); */
     width: 23.5%;
     height: 55px;
 }
-.input_for_select select{
-    height: 55px;
-    width: 100%;
-}
+
 .input_for_select{
     width: 27.5%;
     position: relative;
 }
+
+.input_for_select select{
+    height: 55px;
+    width: 100%;
+}
+
 .arrow_button{
     position: absolute;
     right: 0;
     top: 0;
 }
+
 .reserve_button button{
     width: 30%;
     height: 55px;
+    border: 1px solid var(--color-text-yellow);
+transition: 1s
+}
+.reserve_button:hover button{
+    background-color:var(--color-background-black);
+    color: var(--color-text-white);
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--color-text-yellow);
+    transition: 0.5s;
 }
 
+/* MAIN CONTAINER ICON */
 .main_container_icon{
     gap: 80px;
     padding: 80px 0;
     max-width: auto;
 }
+
+/* CONTAINER ICON */
 .container_icon{
     flex-direction: column;
     width: 17%;
 }
+
 .icon_img{
     width: 50%;
     height: 50%;
 }
+
 .icon_title{
     text-align: center;
 }
 
+.container_icon h4{
+    padding-top: 15px;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: var(--font-forum);
+    color: var(--color-text-white);
+}
+
+.container_icon p{
+    padding: 15px 0;
+    font-family: var(--font-dmsan);
+    color: var(--color-text-gray);
+}
+
+.container_icon a{
+    font-weight: 500;
+    font-family: var(--font-dmsan);
+    color: var(--color-text-yellow);
+}
