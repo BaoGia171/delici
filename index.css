@@ -65,7 +65,7 @@ position: relative;
 .container_slide{    
     animation: slide 15s linear infinite;
 }
-/* @keyframes slide{
+@keyframes slide{
     0%{
         transform: translateX(0);
     }
@@ -82,7 +82,7 @@ position: relative;
     100%{
         transform: translateX(0);
     }
-} */
+}
 .main_container_image {
     background-image: url(./img/banner/banner-1.jpg);
     background-repeat: no-repeat;
@@ -265,11 +265,11 @@ position: relative;
     gap: 30px;
     color: var(--color-text-white);
 }
-@media(max-width:1186px){
+/* @media(max-width:1186px){
 .main_strength_menu {
     flex-wrap: wrap;
 }
-}
+} */
 .main_strength_food {
     flex-direction: column;
     padding: 29px 29px;
@@ -427,11 +427,11 @@ position: relative;
 .main_container_team_img {
     gap: 20px;
 }
-@media(max-width:969px){
+/* @media(max-width:969px){
 .main_container_team_img{
     flex-wrap: wrap;
 }
-}
+} */
 .chef_img {
     z-index: 2;
     width: 400px;
