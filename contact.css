@@ -1,19 +1,19 @@
 /* ----------MAIN---------- */
-.title{
+.title {
     font-size: 17px;
     font-weight: 600;
     color: var(--color-text-yellow);
     padding-bottom: 10px;
-    letter-spacing:8px;
+    letter-spacing: 8px;
 }
 
-.img_separator{
+.img_separator {
     height: 25px;
     width: 170px;
     margin: 10px 0;
 }
 
-.container_title_contact h1{
+.container_title_contact h1 {
     font-family: var(--font-forum);
     text-align: center;
     color: var(--color-text-white);
@@ -22,7 +22,7 @@
     margin: 10px 0;
 }
 
-.left_side_title h3{
+.left_side_title h3 {
     padding-bottom: 15px;
     font-size: 50px;
     font-weight: 200;
@@ -30,107 +30,120 @@
     text-align: center;
 }
 
-.container_lunch_time h4{
+.container_lunch_time h4 {
     color: var(--color-text-white);
     font-family: var(--font-forum);
     font-size: 30px;
     font-weight: 300;
 }
 
-.left_side_title p{
+.left_side_title p {
+    font-size: 17px;
+    font-family: var(--font-dmsan);
     text-align: center;
     color: var(--color-text-gray);
     line-height: 25px;
 }
 
-.left_side_input input{
+.left_side_input input {
     padding-left: 20px;
 }
 
-
 /* MAIN CONTAINER CONTACT */
-.main_container_contact{
+.main_container_contact {
     background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./img/banner/banner-contact.jpg);
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(./img/banner/banner-contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
 }
 
-.container_title_contact{
-    flex-direction: column; 
+.container_title_contact {
+    flex-direction: column;
 }
 
 /* MAIN CONTAINER TIME */
-.main_container_time{
+.main_container_time {
     background-color: var(--color_background_gray);
     display: flex;
     justify-content: space-around;
     padding: 100px 40px;
 }
 
-.container_lunch_time{
-    
+.container_lunch_time {
     text-align: center;
     flex-direction: column;
 }
-.container_lunch_time p{
+.container_lunch_time p {
     padding: 10px 0 0 0;
     color: var(--color-text-gray);
+    font-family: var(--font-dmsan);
 }
 
 /* MAIN CONTAINER MESSAGE */
-.main_container_message{
+.main_container_message {
     background-color: black;
     padding: 80px;
 }
 
-.container_message_us{
+.container_message_us {
     gap: 50px;
     padding: 70px;
 }
 
 /* LEFT SIDE */
-.container_left_side{
+.container_left_side {
     width: 50%;
 }
 
-
-.left_side_input{
+.left_side_input {
     padding: 45px 0;
     flex-direction: column;
     gap: 35px;
 }
 
-.left_side_input input{
-    
-    border: 01px solid var(--color-text-yellow);
+.left_side_input input {
+    color: var(--color-text-yellow);
+    border: 1px solid rgb(62, 54, 43);
     background-color: var(--color-text-black);
     width: 100%;
     height: 60px;
+    transition: 0.5s;
 }
 
-.left_side_input textarea{
-    
-    border: 01px solid var(--color-text-yellow);
+.left_side_input textarea {
+    color: var(--color-text-yellow);
+    border: 1px solid rgb(62, 54, 43);
     background-color: var(--color-text-black);
     height: 150px;
     width: 610px;
     max-width: 610px;
     min-width: 610px;
     padding: 15px 0 0 20px;
+    transition: 0.5s;
+}
+.left_side_input input:focus,
+.left_side_input textarea:focus{
+    border: 1px solid var(--color-text-yellow);
+    outline: none;
 }
 
-.left_side_input button{
-    background-color: var( --color_background_yellow);
+.left_side_input input:hover,
+.left_side_input textarea:hover {
+    transition: 1s;
+    border: 1px solid var(--color-text-yellow);
+}
+
+.left_side_input button {
+    background-color: var(--color_background_yellow);
     width: 250px;
     height: 60px;
     border: 1px solid var(--color-text-yellow);
-transition: 1s;
+    transition: 1s;
 }
-.button_down:hover button{
-    background-color:var(--color-background-black);
+.button_down:hover button {
+    background-color: var(--color-background-black);
     color: var(--color-text-white);
     cursor: pointer;
     background: transparent;
@@ -139,7 +152,7 @@ transition: 1s;
 }
 
 /* RIGHT SIDE */
-.container_right_side{
+.container_right_side {
     width: 50%;
     width: 570px;
     height: 710px;

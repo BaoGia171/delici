@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/global.css" />
+        <link rel="stylesheet" href="./detailsfood.css" />
+        <link rel="stylesheet" href="./css/custom.css" />
+        <title>Details</title>
+    </head>
+    <body>
+        <!-- ------HEADER------ -->
+        <header>
+            <nav>
+                <div class="header flex_between">
+                    <div class="header_left flex_center">
+                        <div class="header_logo">
+                            <a href="./index.html"><img src="./img/logo/logo.png" alt="" /></a>
+                        </div>
+                        <div class="header_menu flex_center">
+                            <ul class="menu_list flex_center">
+                                <li>
+                                    <a  href="index.html">HOME</a>
+                                </li>
+
+                                <li>
+                                    <a class="active" href="menu.html">MENU</a>
+                                    <ul class="menu_hover bg_black">
+                                        <div class="menu_hover_img">
+                                        <li><img src="./img/menu/menu-food-1.jpg" alt=""><a href="./menu.html">Order Food</a></li>
+                                        <li><img src="./img/menu/menu-food-2.jpg" alt=""><a href="partymenu.html">Party Menu</a></li>
+                                        <li><img src="./img/menu-wine/wine-banner.jpg" alt=""><a href="./winemenu.html">Wine</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                    
+                                
+                                <li>
+                                    <a href="about.html">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="reservation.html">RESERVATION</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">CONTACT</a>
+                                </li>
+                                <li>
+                                    <a href="lookup.html">LOOKUP</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header_right flex_center">
+                        <div class="header_phone flex_center">
+                            <svg
+                                width="25"
+                                height="25"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"
+                            >
+                                <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"
+                                />
+                            </svg>
+                            <p>+84 9877499388</p>
+                        </div>
+                        <div class="header_cart_shopping">
+                            <button type="button">
+                                <a href="cart.html"
+                                    ><svg
+                                        width="25"
+                                        height="25"
+                                        fill="white"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"
+                                    >
+                                        <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"
+                                        />
+                                    </svg>
+                                    <span>0</span>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="header_login_signup">
+                            <a href="login.html">Login</a> /
+                            <a href="signup.html">Signup</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- ------HEADER------ -->
+        <!-- ------MAIN------ -->
+        <div class="main_container">
+            <div class="main_container_details flex_center">
+                <div class="container_title_details flex_center">
+                    <span class="title font_dmsan">PRODUCT?</span>
+                    <img
+                        class="img_separator"
+                        src="./img/product/separator.png"
+                        alt=""
+                    />
+                    <h1>DETAILS PRODUCT</h1>
+                </div>
+            </div>
+            <div class="main_container_product flex_center bg_black">
+                <div class="container_food_left">
+                    <img src="./img/menu/menu-food-4.jpg" alt="" />
+                    <ul class="container_food_thumbnails flex_center">
+                        <li><img src="./img/menu/menu-food-4.jpg" alt="" /></li>
+                        <li><img src="./img/menu-wine/head.jpg" alt="" /></li>
+                        <li><img src="./img/menu-wine/body.jpg" alt="" /></li>
+                        <li><img src="./img/menu-wine/madein.jpg" alt="" /></li>
+                    </ul>
+                </div>
+
+                <div class="container_food_right">
+                    <h3>Tokusen Wagyu</h3>
+                    <div class="container_food_rate">
+                        <svg
+                            width="20"
+                            height="20"
+                            fill="yellow"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"
+                        >
+                            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"
+                            />
+                        </svg>
+                        <svg
+                            width="20"
+                            height="20"
+                            fill="yellow"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"
+                        >
+                            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"
+                            />
+                        </svg>
+                        <svg
+                            width="20"
+                            height="20"
+                            fill="yellow"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"
+                        >
+                            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"
+                            />
+                        </svg>
+                        <svg
+                            width="20"
+                            height="20"
+                            fill="yellow"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"
+                        >
+                            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"
+                            />
+                        </svg>
+                        <svg
+                            width="20"
+                            height="20"
+                            fill="yellow"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"
+                        >
+                            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"
+                            />
+                        </svg>
+                    </div>
+                    <span>$39.50</span>
+                    <p>
+                        Vegetables, cheeses, ground meats, tomato sauce,
+                        seasonings and spices.
+                    </p>
+                    <div class="food_top_line"></div>
+                    <h4>INGREDIENTS</h4>
+                    <ul>
+                        <li>- Tannin</li>
+                        <li>- Axit</li>
+                        <li>- Liquor</li>
+                        <li>- Organic substances</li>
+                    </ul>
+                    <div class="food_top_line"></div>
+                    <div class="details_food_button">
+                        <select name="" id="">
+                            <option value="">Select Type</option>
+                            <option value="">Normal</option>
+                            <option value="">Premium</option>
+                        </select>
+                        <button type="submit">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container_reviews padding bg_gray">
+                <div class="container_reviews bg_black">
+                    <span>4.8</span>
+                    <span>/5</span>
+                    <div class="stars_img">
+                        <img src="./img/icon/start.png" alt="" />
+                        <img src="./img/icon/start.png" alt="" />
+                        <img src="./img/icon/start.png" alt="" />
+                        <img src="./img/icon/start.png" alt="" />
+                        <img src="./img/icon/start-1.png" alt="" />
+                    </div>
+                    <p class="text_white font_dmsan">5 evaluate</p>
+                    <h4>Product reviews (5)</h4>
+
+                    <div class="food_reviewer">
+                        <div class="food_down_line"></div>
+                        <div class="reviewer_avarta_rate">
+                            <div class="food_reviewer_img">
+                                <img src="./img/avarta/man-1.jpg" alt="" />
+                            </div>
+                            <div class="food_rate_stars">
+                                <div class="food_reviewer_name">
+                                    <h6>Robert Savin</h6>
+                                    <div class="stars_icon">
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start-1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <p>Great wine. I'm very satisfied.</p>
+                            </div>
+                        </div>
+                        <div class="food_down_line"></div>
+                    </div>
+                    <div class="food_reviewer">
+                        <div class="reviewer_avarta_rate">
+                            <div class="food_reviewer_img">
+                                <img src="./img/avarta/man-2.jpg" alt="" />
+                            </div>
+                            <div class="food_rate_stars">
+                                <div class="food_reviewer_name">
+                                    <h6>David</h6>
+                                    <div class="stars_icon">
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start-1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <p>
+                                    This is a quality wine and the service is
+                                    also very friendly.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="food_down_line"></div>
+                    </div>
+                    <div class="food_reviewer">
+                        <div class="reviewer_avarta_rate">
+                            <div class="food_reviewer_img">
+                                <img src="./img/avarta/man-3.jpg" alt="" />
+                            </div>
+                            <div class="food_rate_stars">
+                                <div class="food_reviewer_name">
+                                    <h6>Petter</h6>
+                                    <div class="stars_icon">
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start-1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <p>
+                                    It can only be said that the quality is
+                                    indisputable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="food_down_line"></div>
+                    </div>
+                    <div class="food_reviewer">
+                        <div class="reviewer_avarta_rate">
+                            <div class="food_reviewer_img">
+                                <img src="./img/avarta/women-1.jpg" alt="" />
+                            </div>
+                            <div class="food_rate_stars">
+                                <div class="food_reviewer_name">
+                                    <h6>Jenny Violet</h6>
+                                    <div class="stars_icon">
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start-1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <p>
+                                    Premium wines are really different from
+                                    regular wines. Value and quality.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="food_down_line"></div>
+                    </div>
+                    <div class="food_reviewer">
+                        <div class="reviewer_avarta_rate">
+                            <div class="food_reviewer_img">
+                                <img src="./img/avarta/women-2.jpg" alt="" />
+                            </div>
+                            <div class="food_rate_stars">
+                                <div class="food_reviewer_name">
+                                    <h6>Rose Krixi</h6>
+                                    <div class="stars_icon">
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./img/icon/start-1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <p>
+                                    The scent of the wine is very fragrant and
+                                    the taste is also great. I love it.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="food_down_line"></div>
+                    </div>
+                    <h5>Leave your Review</h5>
+                    <input
+                        type="text"
+                        name="text"
+                        id=""
+                        placeholder="Enter comment here..."
+                    />
+                    <div class="review_submit">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------MAIN------ -->
+        <footer>
+            <div class="footer">
+                <div class="container_main_footer flex_center">
+                    <div class="footer_menu">
+                        <ul class="text_gray flex_center">
+                            <li><a href=""></a>HOME</li>
+                            <li><a href=""></a>MENUS</li>
+                            <li><a href=""></a>ABOUT US</li>
+                            <li><a href=""></a>OUR CHEFS</li>
+                            <li><a href=""></a>CONTACT</li>
+                        </ul>
+                    </div>
+                    <div class="footer_menu_mid">
+                        <img src="./img/banner/pattern-4.png" alt="" />
+                        <div class="footer_left_line">
+                            <img src="./img/slide/download.svg" alt="" />
+                        </div>
+                        <div class="footer_right_line">
+                            <img src="./img/slide/download.svg" alt="" />
+                        </div>
+                        <div class="footer_menu_logo">
+                            <div class="footer_logo_img">
+                                <img src="./img/logo/logo.png" alt="" />
+                            </div>
+
+                            <div class="footer_address text_gray">
+                                <p>
+                                    Restaurant St, Delicious City, London 9578,
+                                    UK
+                                </p>
+                                <a class="text_gray" href=""
+                                    >booking@domainname.com</a
+                                >
+                                <br />
+                                <a class="text_gray" href=""
+                                    >Booking Request : +88-123-123456</a
+                                >
+                                <p>Open : 09:00 am - 01:00 pm</p>
+                            </div>
+                            <div class="footer_box flex_center">
+                                <div class="main_container_box"></div>
+                                <div class="main_container_box"></div>
+                                <div class="main_container_box"></div>
+                            </div>
+                            <div class="footer_info flex_center">
+                                <div class="footer_info_text">
+                                    <h3 class="font_forum text_white">
+                                        Get News & Offers
+                                    </h3>
+                                    <p class="text_gray">
+                                        Subscribe us & Get
+                                        <span class="text_white">25% Off.</span>
+                                    </p>
+                                </div>
+
+                                <div class="footer_button">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        fill="white"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"
+                                    >
+                                        <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M125.4 128C91.5 128 64 155.5 64 189.4C64 190.3 64 191.1 64.1 192L64 192L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 192L575.9 192C575.9 191.1 576 190.3 576 189.4C576 155.5 548.5 128 514.6 128L125.4 128zM528 256.3L528 448C528 456.8 520.8 464 512 464L128 464C119.2 464 112 456.8 112 448L112 256.3L266.8 373.7C298.2 397.6 341.7 397.6 373.2 373.7L528 256.3zM112 189.4C112 182 118 176 125.4 176L514.6 176C522 176 528 182 528 189.4C528 193.6 526 197.6 522.7 200.1L344.2 335.5C329.9 346.3 310.1 346.3 295.8 335.5L117.3 200.1C114 197.6 112 193.6 112 189.4z"
+                                        />
+                                    </svg>
+                                    <input
+                                        class="bg_black"
+                                        type="email"
+                                        name="email"
+                                        placeholder="Email"
+                                    />
+                                    <div class="button_down">
+                                        <button type="submit">SUBSCRIBE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_menu">
+                        <ul class="text_gray flex_center">
+                            <li><a href=""></a>FACEBOOK</li>
+                            <li><a href=""></a>TWITTER</li>
+                            <li><a href=""></a>INSTAGRAM</li>
+                            <li><a href=""></a>YOUTUBE</li>
+                            <li><a href=""></a>GOOGLE MAP</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="code_by">
+                    <p class="text_white">
+                        © 2023 Restaurt. All Rights Reserved | Code by
+                        <span class="text_yellow"> Hien Developer</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- ------FOOTER------ -->
+    </body>
+</html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -15,20 +15,38 @@
                 <div class="header flex_between">
                     <div class="header_left flex_center">
                         <div class="header_logo">
-                            <img src="./img/logo/logo.png" alt="" />
+                            <a href="./index.html"><img src="./img/logo/logo.png" alt="" /></a>
                         </div>
-                        <div class="header_menu">
-                            <ul class="menu_list">
+                        <div class="header_menu flex_center">
+                            <ul class="menu_list flex_center">
                                 <li>
-                                    <a class="active" href="index.html">HOME</a>
+                                    <a  href="index.html">HOME</a>
                                 </li>
-                                <li><a href="menu.html">MENU</a></li>
-                                <li><a href="about.html">ABOUT</a></li>
+
+                                <li>
+                                    <a href="menu.html">MENU</a>
+                                    <ul class="menu_hover bg_black">
+                                        <div class="menu_hover_img">
+                                        <li><img src="./img/menu/menu-food-1.jpg" alt=""><a href="./menu.html">Order Food</a></li>
+                                        <li><img src="./img/menu/menu-food-2.jpg" alt=""><a href="partymenu.html">Party Menu</a></li>
+                                        <li><img src="./img/menu-wine/wine-banner.jpg" alt=""><a href="./winemenu.html">Wine</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                    
+                                
+                                <li>
+                                    <a class="active" href="about.html">ABOUT</a>
+                                </li>
                                 <li>
                                     <a href="reservation.html">RESERVATION</a>
                                 </li>
-                                <li><a href="contact.html">CONTACT</a></li>
-                                <li><a href="lookup.html">LOOKUP</a></li>
+                                <li>
+                                    <a href="contact.html">CONTACT</a>
+                                </li>
+                                <li>
+                                    <a href="lookup.html">LOOKUP</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -62,8 +80,8 @@
                                             d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"
                                         />
                                     </svg>
-                                    <span>0</span></a
-                                >
+                                    <span>0</span>
+                                </a>
                             </button>
                         </div>
                         <div class="header_login_signup">
@@ -76,6 +94,7 @@
         </header>
         <!-- ------MAIN------ -->
         <div class="main_container">
+            <!-- ----------MAIN CONTAINER ABOUT---------- -->
             <div class="main_container_about flex_center">
                 <div class="container_title_about flex_center">
                     <span class="title font_dmsan">DELICIOUS & AMAZING</span>
@@ -87,6 +106,7 @@
                     <h1>ABOUT US</h1>
                 </div>
             </div>
+            <!-- ----------MAIN CONTAINER AMAZING---------- -->
             <div class="main_container_amazing bg_black">
                 <div class="container_title_amazing flex_center">
                     <span class="title font_dmsan">DELICIOUS & AMAZING</span>
@@ -95,13 +115,12 @@
                         src="./img/product/separator.png"
                         alt=""
                     />
-                    <p class="about_title text_white">
+                    <p class="text_white">
                         A modern restaurant with a menu that will make your
                         mouth water. Servicing delicious <br />
                         food
-                        <span class="about_title text_yellow"
-                            >since 45 years</span
-                        >. Enjoy our seasonal menu and experience the beauty of
+                        <span class="text_yellow">since 45 years</span>. Enjoy
+                        our seasonal menu and experience the beauty of
                         naturalness
                     </p>
                 </div>
@@ -120,6 +139,22 @@
                         <span class="text_yellow">ANDREW JOE - FOUNDER</span>
                         <div class="info_video">
                             <img src="./img/about/banner-1.jpg" alt="" />
+                            
+                                <div class="main_container_play_button flex_center">
+                                <a href=""
+                                    ><svg
+                                        width="40"
+                                        height="40"
+                                        fill="white"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"
+                                    >
+                                        <path
+                                            d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z"
+                                        /></svg>
+                                </a>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="container_info_restaurant">
@@ -182,15 +217,19 @@
                     </div>
                 </div>
             </div>
+            <!-- ----------MAIN CONTAINER EXPERIENCE---------- -->
             <div class="main_container_experience bg_gray">
                 <div class="container_chef_experience flex_center">
                     <div class="chef_img">
                         <img src="./img/about/banner-3.jpg" alt="" />
                     </div>
                     <div class="chef_award">
-                        <div class="container_title_amazing flex_center">
+                        <div class="container_chef_award flex_center">
+                            <div class="chef_left_right">
+                                <img src="./img/slide/bg-1.png" alt="">
+                            </div>
                             <span class="title font_dmsan"
-                                >35 YEAR OF EXPERIENC</span
+                                >35 YEAR OF EXPERIENCE</span
                             >
                             <img
                                 class="img_separator"
@@ -200,22 +239,27 @@
                             <h3>Award Winning Chef</h3>
                             <p>
                                 Lorem Ipsum is simply dummy text of the
-                                printingand typesetting industry lorem <br> Ipsum has
-                                been the industrys standard dummy text ever
-                                since the when an <br> unknown printer took a galley
-                                of type.
+                                printingand typesetting industry lorem <br />
+                                Ipsum has been the industrys standard dummy text
+                                ever since the when an <br />
+                                unknown printer took a galley of type.
                             </p>
                             <div class="info_signature">
                                 <img src="./img/icon/signature-1.png" alt="" />
                             </div>
                             <span>HENRY - EXCUTIVE CHEF</span>
-                            <div class="button_down"><button type="button">VIEW MENU</button></div>
+                            <div class="button_down">
+                                <button type="button">VIEW MENU</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="container_chef_experience flex_center">
                     <div class="chef_award">
-                        <div class="container_title_amazing flex_center">
+                        <div class="container_chef_award flex_center">
+                            <div class="chef_left_left">
+                                <img src="./img/slide/bg-21.png" alt="">
+                            </div>
                             <span class="title font_dmsan"
                                 >DELIGHTFUL EXPERIENCE</span
                             >
@@ -227,24 +271,34 @@
                             <h3>Dinner, Event or Party?</h3>
                             <p>
                                 Lorem Ipsum is simply dummy text of the
-                                printingand typesetting industry lorem <br> Ipsum has
-                                been the industrys standard dummy text ever
-                                since the when an <br> unknown printer took a galley
-                                of type.
+                                printingand typesetting industry lorem <br />
+                                Ipsum has been the industrys standard dummy text
+                                ever since the when an <br />
+                                unknown printer took a galley of type.
                             </p>
                             <div class="info_signature">
                                 <img src="./img/icon/signature-1.png" alt="" />
                             </div>
                             <span>HENRY - EXCUTIVE CHEF</span>
-                            <div class="button_down"><button type="button">VIEW MENU</button></div>
+                            <div class="button_down">
+                                <button type="button">VIEW MENU</button>
+                            </div>
                         </div>
                     </div>
                     <div class="chef_img">
-                        <img src="./img/about/banner-3.jpg" alt="" />
+                        <img src="./img/about/banner-4.jpg" alt="" />
                     </div>
+                    
                 </div>
             </div>
+            <!-- ----------MAIN CONTAINER SERVICE---------- -->
             <div class="main_container_service bg_black">
+                <div class="service_slide_food">
+                        <img src="./img/slide/food.png" alt="">
+                    </div>
+                <div class="service_slide_lemon">
+                    <img src="./img/slide/lemon.png" alt="">
+                </div>
                 <div class="container_service_title flex_center">
                     <div class="container_title_service flex_center">
                         <span class="title font_dmsan">OUR SERVICES </span>
@@ -259,79 +313,78 @@
 
                 <div class="main_restaurant_service flex_center">
                     <div class="main_content">
-                    <div class="content_icon flex_center">
-                        <div class="icon">
-                            <img src="./img/icon/about-icon-1.png" alt="" />
+                        <div class="content_icon flex_center">
+                            <div class="icon">
+                                <img src="./img/icon/about-icon-1.png" alt="" />
+                            </div>
+                            <div class="content_text text_white">
+                                <h4>Door Delivery</h4>
+                                <p>
+                                    Lorem Ipsum is simply dummy printing and
+                                    <br />
+                                    typeset industry lorem Ipsum has been.
+                                </p>
+                            </div>
                         </div>
-                        <div class="content_text text_white">
-                            <h4>Door Delivery</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy printing and <br> typeset
-                                industry lorem Ipsum has been.
-                            </p>
+
+                        <div class="content_icon flex_center">
+                            <div class="content_text text_white">
+                                <h4>Fine Dining</h4>
+                                <p>
+                                    Lorem Ipsum is simply dummy printing and
+                                    <br />
+                                    typeset industry lorem Ipsum has been.
+                                </p>
+                            </div>
+                            <div class="icon">
+                                <img src="./img/icon/about-icon-2.png" alt="" />
+                            </div>
                         </div>
                     </div>
 
-                    <div class="content_icon flex_center">
-                        <div class="content_text text_white">
-                            <h4>Fine Dining</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy printing and <br> typeset
-                                industry lorem Ipsum has been.
-                            </p>
-                        </div>
-                        <div class="icon">
-                            <img src="./img/icon/about-icon-2.png" alt="" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="main_service">
-                    
+                    <div class="main_service">
                         <div class="service_food_img">
                             <img src="./img/icon/about-food.png" alt="" />
-                            
                         </div>
                         <div class="service_img_after">
                             <img src="./img/slide/after.svg" alt="" />
                         </div>
-                        
-                    
-                </div>
-
-                <div class="main_content">
-                    <div class="content_icon flex_center">
-                        
-                        <div class="content_text text_white">
-                            <h4>Outdoor Catering</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy printing and <br> typeset
-                                industry lorem Ipsum has been.
-                            </p>
-                        </div>
-                        <div class="icon">
-                            <img src="./img/icon/about-icon-3.png" alt="" />
-                        </div>
                     </div>
 
-                    <div class="content_icon flex_center">
-                        <div class="icon">
-                            <img src="./img/icon/about-icon-4.png" alt="" />
+                    <div class="main_content">
+                        <div class="content_icon flex_center">
+                            <div class="content_text text_white">
+                                <h4>Outdoor Catering</h4>
+                                <p>
+                                    Lorem Ipsum is simply dummy printing and
+                                    <br />
+                                    typeset industry lorem Ipsum has been.
+                                </p>
+                            </div>
+                            <div class="icon">
+                                <img src="./img/icon/about-icon-3.png" alt="" />
+                            </div>
                         </div>
-                        <div class="content_text text_white">
-                            <h4>Banquets Hall</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy printing and <br> typeset
-                                industry lorem Ipsum has been.
-                            </p>
+
+                        <div class="content_icon flex_center">
+                            <div class="icon">
+                                <img src="./img/icon/about-icon-4.png" alt="" />
+                            </div>
+                            <div class="content_text text_white">
+                                <h4>Banquets Hall</h4>
+                                <p>
+                                    Lorem Ipsum is simply dummy printing and
+                                    <br />
+                                    typeset industry lorem Ipsum has been.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
         <!-- ------FOOTER------ -->
-         <footer>
+        <footer>
             <div class="footer">
                 <div class="container_main_footer flex_center">
                     <div class="footer_menu">
@@ -405,7 +458,9 @@
                                         name="email"
                                         placeholder="Email"
                                     />
-                                    <button type="submit">SUBSCRIBE</button>
+                                    <div class="button_down">
+                                        <button type="submit">SUBSCRIBE</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

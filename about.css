@@ -45,33 +45,68 @@
 .container_title_amazing{
     gap: 20px;
     flex-direction: column;
-}
-
-.container_title_amazing span{
-    color: var(--color-text-yellow);
-    font-size: 13px;
-    letter-spacing: 3px;
-}
-
-.container_title_amazing h3{
-    color: var(--color-text-white);
-    font-size: 50px;
-    font-family: var(--font-forum);
-    font-weight: 300;
+    padding: 50px 0 0 0;
 }
 
 .container_title_amazing p{
     text-align: center;
     color: var(--color-text-white);
-    font-family: var(--font-dmsan);
+    font-family: var(--font-forum);
+    font-size: 30px;
+}
+.container_title_amazing p span{
+    font-size: 30px;
+    text-align: center;
+    color: var(--color-text-yellow);
+    font-family: var(--font-forum);
 }
 
-.container_title_amazing button{
+    /* MAIN_CONTAINER_EXPERIENCE */
+.container_chef_award{
+    position: relative;
+    gap: 20px;
+    flex-direction: column;
+    
+}
+.chef_left_right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.chef_left_left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.container_chef_award p{
+    text-align: center;
+    color: var(--color-text-white);
+    font-family: var(--font-dmsan);
+    font-size: 17px;
+    z-index: 2;
+    line-height: 30px;
+}
+.container_chef_award span{
+    color: var(--color-text-yellow);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 5px; 
+    z-index: 2;
+}
+.container_chef_award h3{
+    color: var(--color-text-white);
+    font-size: 50px;
+    font-family: var(--font-forum);
+    font-weight: 300;
+    z-index: 2;
+}
+
+.container_chef_award button{
     background-color: var(--color_background_yellow);
-    width: 250px;
-    height: 55px;
+    padding: 20px 150px;
     border: 1px solid var(--color-text-yellow);
-transition: 1s
+    transition: 1s
 }
 .button_down:hover button{
     color: var(--color-text-white);
@@ -80,14 +115,6 @@ transition: 1s
     border: 1px solid var(--color-text-yellow);
     transition: 0.5s;
 }
-
-.about_title {
-    font-family: var(--font-forum);
-    font-weight: 400;
-    font-size: 30px;
-}
-
-
    /* INFO INTRODUCE */
 
 .container_info_introduce{
@@ -126,6 +153,41 @@ transition: 1s
     width: 30%;
 }
 
+.info_video{
+    position: relative;
+}
+
+.main_container_play_button{
+    position: absolute;
+
+    cursor: pointer;
+    top: 75px;
+    left: 155px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+ 
+}
+.main_container_play_button::after{
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    border: 1px solid white;
+    animation: play 1.5s linear infinite;
+}
+@keyframes play{
+    0%{
+        
+        width: 100%;
+        height: 100%;
+    }
+    100%{
+        opacity: 0;
+        width: 150px;
+        height: 150px;
+    }
+}
 
    /* TIME / CONTACT */
 
@@ -177,12 +239,22 @@ transition: 1s
 }
 
 
-   /* SERVICE */
+   /* MAIN CONTAINER SERVICE */
 
 .main_container_service{
     padding: 100px;
+    position: relative;
 }
-
+.service_slide_food{
+    position: absolute;
+    top: -120px;
+    left: -20px;
+}
+.service_slide_lemon{
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+}
 .container_title_service{
     flex-direction: column; 
 }
@@ -227,7 +299,9 @@ transition: 1s
     border-radius: 50%;
     background-color:var(--color_background_gray);
 }
-
+.icon:hover img{
+    transform: rotateY(180deg);
+}
 
    /* MAIN SERVICE IMAGE */
 

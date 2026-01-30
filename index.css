@@ -89,13 +89,40 @@
 }
 .slide_right_img{
     position: absolute;
-    top: 0;
+    top: 40px;
     right: 0;
+    animation: imgright 3s linear infinite;
+}
+@keyframes imgright{
+ 0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-20px);
+        
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }
 .slide_left_img{
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 40px;
+    animation: imgleft 2s linear infinite;
+}
+@keyframes imgleft{
+0%{
+    transform: translateY(25px);
+}
+50%{
+    transform: translateY(0px);
+}
+100%{
+    transform: translateY(25px);
+}
 }
 .main_offer_title,
 .main_container_menu_title,
@@ -238,18 +265,23 @@
 .slide_right{
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 25px;
+    animation: imgleft 2s linear infinite;
+    z-index: 1;
 }
 .slide_left{
     position: absolute;
+    z-index: 1;
     left: 0;
-    top: 0;
+    top: 25px;
+    animation:imgright 3s linear infinite;
 }
 .main_container_all_menu {
     flex-direction: column;
 }
 
 .main_container_menu_tabs {
+    z-index: 2;
     width: 90%;
     border: 1px solid var(--color-text-yellow);
     border-left: none;
@@ -263,6 +295,7 @@
 }
 
 .main_container_morning_menu {
+    z-index: 2;
     gap: 50px;
 }
 
@@ -350,15 +383,17 @@
 }
 .left_slide{
     position: absolute;
+    z-index: 1;
     left: 0;
-    bottom: 0;
+    bottom: 20px;
+    animation: imgleft 2s linear infinite;
 }
 .main_container_team_img {
     gap: 20px;
 }
 
 .chef_img {
-    
+    z-index: 2;
     width: 400px;
 }
 .chef_member_img{
@@ -443,7 +478,33 @@
     font-size: 50px;
     margin: 40px 0;
 }
-
+.main_container_play_button{
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.main_container_play_button::after{
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    border: 1px solid white;
+    animation: play 1.5s linear infinite;
+}
+@keyframes play{
+    0%{
+        
+        width: 100%;
+        height: 100%;
+    }
+    100%{
+        opacity: 0;
+        width: 150px;
+        height: 150px;
+    }
+}
 .main_container_bigbox {
     margin-top: 40px;
     gap: 15px;

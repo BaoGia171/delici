@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/global.css" />
-        <link rel="stylesheet" href="./reservation.css" />
+        <link rel="stylesheet" href="./cart.css" />
         <link rel="stylesheet" href="./css/custom.css" />
-        <title>Reservation</title>
+        <title>Cart</title>
     </head>
     <body>
         <!-- ------HEADER------ -->
@@ -39,7 +39,7 @@
                                     <a href="about.html">ABOUT</a>
                                 </li>
                                 <li>
-                                    <a class="active" href="reservation.html">RESERVATION</a>
+                                    <a href="reservation.html">RESERVATION</a>
                                 </li>
                                 <li>
                                     <a href="contact.html">CONTACT</a>
@@ -95,151 +95,46 @@
         <!-- ------HEADER------ -->
         <!-- ------MAIN------ -->
         <div class="main_container">
-            <div class="main_container_book flex_center">
-                <div class="container_title_book flex_center">
-                    <span class="title font_dmsan">BOOK YOUR TABLE </span>
+            <div class="main_container_cart flex_center">
+                <div class="container_title_cart flex_center">
+                    <span class="title font_dmsan">CART MANAGEMENT</span>
                     <img
                         class="img_separator"
                         src="./img/product/separator.png"
                         alt=""
                     />
-                    <h1>Reservation</h1>
+                    <h1>CART</h1>
                 </div>
             </div>
-            <div class="main_container_reservation bg_gray">
-                <div class="container_title_book flex_center">
-                    <span class="title font_dmsan">RESERVATION </span>
-                    <img
-                        class="img_separator"
-                        src="./img/product/separator.png"
-                        alt=""
-                    />
-                    <h2 class="text_white">Book A Table</h2>
-                    <p class="text_gray">
-                        Restaurant will be open for all days, Sunday night will
-                        be closed, All booking payment is secured with credit
-                        card, no charges will be aplly for online booking. no
-                        refundable.
-                    </p>
-                    <p class="text_white">
-                        Booking request
-                        <span class="text_yellow">+88-123-123456</span> or fill
-                        out the order form
-                    </p>
-                </div>
-                <div class="reserve_input">
-                    <div class="reserve_input_top flex_center">
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="Your Name"
-                            pattern="[A-za-z\s],{2,}"
-                            required
-                        />
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Email"
-                            required
-                        />
+            <div class="main_cart_totals bg_black">
+                <h2>
+                    You have not selected a product. <br />
+                    Please order product from the menu
+                </h2>
+                <div class="container_cart_totals">
+                    <h3>Cart Totals</h3>
+                    <div class="cart_totals">
+                        <div class="cart_total_title flex_between">
+                            <p>Shipping Free</p>
+                            <span>FREE!!!</span>
+                        </div>
+                        <div class="cart_totals_line"></div>
                     </div>
-                    <div class="reserve_input_down flex_center">
-                        <div class="input_for_select">
-                            <select name="" id="">
-                                <option value="1 person">1 Person</option>
-                                <option value="2 person">2 Person</option>
-                                <option value="3 person">3 Person</option>
-                                <option value="4 person">4 Person</option>
-                            </select>
+                    <div class="cart_totals">
+                        <div class="cart_total_title flex_between">
+                            <p>Shipping Free</p>
+                            <p>$</p>
                         </div>
-                        <input
-                            type="date"
-                            name="date"
-                            placeholder="Email"
-                            required
-                        />
-                        <div class="input_for_select">
-                            <select name="" id="">
-                                <option value="08:00am">08:00 am</option>
-                                <option value="09:00am">09:00 am</option>
-                                <option value="10:00am">10:00 am</option>
-                                <option value="11:00am">11:00 am</option>
-                                <option value="12:00am">12:00 am</option>
-                                <option value="01:00pm">01:00 pm</option>
-                                <option value="02:00pm">02:00 pm</option>
-                                <option value="03:00pm">03:00 pm</option>
-                                <option value="04:00pm">04:00 pm</option>
-                                <option value="05:00pm">05:00 pm</option>
-                                <option value="06:00pm">06:00 pm</option>
-                                <option value="07:00pm">07:00 pm</option>
-                                <option value="08:00pm">08:00 pm</option>
-                                <option value="09:00pm">09:00 pm</option>
-                            </select>
-                        </div>
+                        <div class="cart_totals_line"></div>
                     </div>
-                    <div class="reserve_button flex_center">
-                        <button class="bg_yellow flex_center" type="submit">
-                            BOOK A TABLE
-                        </button>
-                    </div>
-                </div>
-                <div class="main_container_icon flex_center">
-                    <div class="container_icon flex_center">
-                        <div class="icon_img">
-                            <img src="./img/icon/ny.png" alt="" />
-                        </div>
-                        <div class="icon_title">
-                            <h4>New York</h4>
-                            <p>
-                                Restaurant St, Delicious City, NY.
-                                <br />+88-123-123456 booking@domainname.com
-                            </p>
-                            <a href="">GET DIRECTION </a>
-                        </div>
-                    </div>
-                    <div class="container_icon flex_center">
-                        <div class="icon_img">
-                            <img src="./img/icon/paris.png" alt="" />
-                        </div>
-                        <div class="icon_title">
-                            <h4>Paris</h4>
-                            <p>
-                                Restaurant St, Delicious City, NY.
-                                <br />+88-123-123456 booking@domainname.com
-                            </p>
-                            <a href="">GET DIRECTION </a>
-                        </div>
-                    </div>
-                    <div class="container_icon flex_center">
-                        <div class="icon_img">
-                            <img src="./img/icon/dubai.png" alt="" />
-                        </div>
-                        <div class="icon_title">
-                            <h4>Dubai</h4>
-                            <p>
-                                Restaurant St, Delicious City, NY.
-                                <br />+88-123-123456 booking@domainname.com
-                            </p>
-                            <a href="">GET DIRECTION </a>
-                        </div>
-                    </div>
-                    <div class="container_icon flex_center">
-                        <div class="icon_img">
-                            <img src="./img/icon/toronto.png" alt="" />
-                        </div>
-                        <div class="icon_title">
-                            <h4>Toronto</h4>
-                            <p>
-                                Restaurant St, Delicious City, NY.
-                                <br />+88-123-123456 booking@domainname.com
-                            </p>
-                            <a href="">GET DIRECTION </a>
-                        </div>
+                    <div class="cart_totals_button">
+                        <button type="submit">PROCCEED TO CHECKOUT</button>
                     </div>
                 </div>
             </div>
         </div>
-          <!-- ------FOOTER------ -->
+        <!-- ------MAIN------ -->
+        <!-- ------FOOTER------ -->
         <footer>
             <div class="footer">
                 <div class="container_main_footer flex_center">

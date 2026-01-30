@@ -1,0 +1,208 @@
+/* ----------MAIN---------- */
+.title{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-text-yellow);
+    padding-bottom: 10px;
+    letter-spacing:8px;
+}
+
+.img_separator{
+    height: 25px;
+    width: 170px;
+    margin: 10px 0;
+}
+
+.container_title_details h1{
+    font-family: var(--font-forum);
+    text-align: center;
+    color: var(--color-text-white);
+    font-size: 80px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+
+
+/* MAIN CONTAINER DETAILS */
+.main_container_details{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/banner/banner-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+.container_title_details{
+    flex-direction: column; 
+}
+
+.main_container_product{
+    gap: 36px;
+    padding: 100px 0;
+}
+.container_food_left{
+    
+    width: 350px;
+
+}
+.container_food_thumbnails{
+    margin: 7px 0 0 0;
+    gap: 15px;
+}
+.container_food_thumbnails li{
+    width: 100%;
+    height: 80px;
+}
+
+.container_food_right h3{
+    font-family: var(--font-forum);
+    font-size: 50px;
+    color: var(--color-text-white);
+    font-weight: 400;
+}
+.container_food_rate{
+    padding: 10px 0;
+}
+.container_food_right span{
+    color: var(--color-text-yellow);
+    font-size: 30px;
+    font-weight: 400;
+}
+.container_food_right p{
+    font-size: 20px;
+    font-family: var(--font-forum);
+    padding-top: 10px;
+    color: var(--color-text-white);
+}
+.container_food_right h4{
+    font-size: 25px;
+    font-family: var(--font-forum);
+    color: var(--color-text-yellow);
+    font-weight: 300;
+}
+.container_food_right ul{
+    line-height: 35px;
+}
+.container_food_right ul li{
+    font-size: 18px;
+    font-family: var(--font-forum);
+    color: var(--color-text-white);
+}
+.food_top_line{
+    margin: 25px 0;
+    height: 1px;
+    background-color: white;
+}
+.food_down_line{
+    height: 1px;
+    background-color: white;
+}
+.details_food_button select,.details_food_button button{
+    width: 49%;
+    padding: 15px;
+}
+.details_food_button select{
+    background-color: var(--color_background_black);
+    color: var(--color-text-white);
+    border: 1px solid white;
+}
+.details_food_button button{
+    background-color: var(--color_background_yellow);
+    letter-spacing: 1px;
+}
+.container_reviews{
+    padding: 50px;
+}
+.container_reviews span:nth-child(1){
+    color: var(--color-text-yellow);
+    font-size: 30px;
+    font-family: var(--font-forum);
+}
+.container_reviews span:nth-child(2){
+    color: var(--color-text-white);
+    font-size: 25px;
+    font-family: var(--font-forum);
+}
+.container_reviews h4{
+    font-family: var(--font-forum);
+    color: var(--color-text-white);
+    font-size: 50px;
+    font-weight: 300;
+    margin: 15px 0 5px 0;
+}
+.container_reviews h5{
+    color: var(--color-text-white);
+    font-family: var(--color-text-gray);
+    font-weight: 300;
+    font-size: 25px;
+    padding: 20px 0 5px 0;
+}
+.container_reviews input{
+    width: 100%;
+    padding: 15px 0 ;
+    background-color: var(--color_background_black);
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: 0.5s;
+    border-bottom: 1px solid rgb(58, 58, 58);
+    color: var(--color-text-white);
+}
+.container_reviews input:focus{
+    transition: 0.5s;
+    border-bottom: 1px solid white;
+}
+.container_reviews button{
+    background-color: white;
+    padding: 15px 65px;
+    
+}
+.review_submit{
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+}
+.stars_img{
+    margin: 15px 0;
+}
+.food_rate_stars{
+    padding-top: 10px;
+}
+.food_rate_stars p{
+    font-family: var(--font-dmsan);
+    color: var(--color-text-gray);
+    padding-top: 5px;
+}
+.food_reviewer_name h6{
+    font-size: 20px;
+    color: var(--color-text-yellow);
+    font-weight: 300;
+}
+.reviewer_avarta_rate{
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+.food_reviewer_img{
+    border-radius: 50%;
+    border: 2px solid var(--color-text-yellow);
+    width: 90px;
+    height: 95px;
+}
+.food_reviewer_img img{
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.food_reviewer_name{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.stars_icon,.stars_img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
