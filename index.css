@@ -57,21 +57,57 @@
 }
 
 /* MAIN CONTAINER IMAGE */
+.main_container_slide{
+overflow: hidden;
+position: relative;
+    height: 95vh;
+}
+.container_slide{    
+    animation: slide 15s linear infinite;
+}
+/* @keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-1520px);
+        
+    }
+    75%{
+        transform: translateX(-1520px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+} */
 .main_container_image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url(./img/banner/banner-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.main_container_image_1{
+    background-image: url(./img/banner/banner-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
 }
 
 .main_container_title {
-    display: flex;
+    
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 350px;
 }
 
@@ -82,7 +118,6 @@
     font-weight: 100;
     margin: 10px 0;
 }
-
 /* MAIN CONTAINER OFFER */
 .main_container_offer{
     position: relative;
@@ -142,8 +177,8 @@
 }
 
 .main_container_notch {
-    display: flex;
-    justify-content: space-around;
+    gap: 80px;
+    flex-wrap: wrap;
     padding-top: 80px;
 }
 
@@ -227,13 +262,14 @@
 }
 /* MAIN CONTAINER STRENGTH */
 .main_strength_menu {
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    gap: 30px;
     color: var(--color-text-white);
 }
-
+@media(max-width:1186px){
+.main_strength_menu {
+    flex-wrap: wrap;
+}
+}
 .main_strength_food {
     flex-direction: column;
     padding: 29px 29px;
@@ -391,7 +427,11 @@
 .main_container_team_img {
     gap: 20px;
 }
-
+@media(max-width:969px){
+.main_container_team_img{
+    flex-wrap: wrap;
+}
+}
 .chef_img {
     z-index: 2;
     width: 400px;

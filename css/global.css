@@ -122,8 +122,34 @@ cursor: pointer;
 .header_phone p {
     color: var(--color-text-yellow);
 }
-.header_phone svg {
+.header_phone_icon {
+    cursor: pointer;
     fill: #e4c290;
+    position: relative;
+}
+.header_phone_icon::before{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    content: "";
+    border-radius: 50%;
+    background-color: #e4c2906a;
+    animation: phone 1s linear infinite;
+}
+@keyframes phone{
+    0%{
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
+    100%{
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+    
 }
 .header_cart_shopping span {
     position: absolute;
@@ -159,6 +185,9 @@ color: var(--color-text-yellow);
 }
  .menu_list li a.active{
     color: var(--color-text-yellow);
+ }
+ .header_login_signup a{
+    font-family: var(--font-dmsan);
  }
 /* <!-- ------HEADER------ --> */
 
