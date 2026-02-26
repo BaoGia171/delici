@@ -5,12 +5,13 @@
     box-sizing: border-box;
 }
 
+/* ROOT */
 :root{
     --font-dmsan:"DM Sans", sans-serif;
     --font-forum:"Forum", serif;
 
-    --color-text-white:white;
     --color-text-red:red;
+    --color-text-white:white;
     --color-text-yellow:#e4c290;
     --color-text-black:black;
 
@@ -18,24 +19,21 @@
     --color-background-black:black;
 }
 
-
+/* BODY */
 body{
-    background-image: url(./img/banner/banner-login.jpg);
+    background-image: url(../../img/banner/banner-login.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
-/* GLOBAL ELEMENT */
 label{
     padding: 7px 0 5px 7px;
     color: var(--color-text-white);
 }
 
 h1{
-    margin-top: 15px;
-    font-size: 30px;
-    font-weight: 200;
+    font-weight: 300;
     color: var(--color-text-white);
 }
 
@@ -44,12 +42,10 @@ h1 span{
 }
 
 p{
-    font-family: var(--font-dmsan);
     color: var(--color-text-white);
 }
 
 a{
-    color: var(--color-text-yellow);
     text-decoration: none;
 }
 
@@ -63,58 +59,64 @@ input{
     background-color: rgba(255, 255, 255, 0.145);
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 input:focus{
     outline: none;
     border: 1px solid #e4c290;
 }
 
-/* INPUT VALIDATION */
-.error{
+svg:hover{
+    fill:var(--color-text-yellow);
+    cursor: pointer;
+}
+
+/* ERROR */
+.error {
     display: none;
     color: var(--color-text-red);
     font-size: 15px;
     margin-top: 5px;
 }
 
-input:invalid:not(:placeholder-shown) + .error{
+.input_icon input:invalid:not(:placeholder-shown) + .error {
     display: block;
 }
 
-input:invalid:not(:placeholder-shown){
+.input_icon input:invalid:not(:placeholder-shown) {
     border: 1px solid red;
 }
 
-input:valid:not(:placeholder-shown){
+.input_icon input:valid:not(:placeholder-shown) {
     border: 1px solid green;
 }
 
-/* CONTAINER SIGNUP */
-.container_signup{
+/* CONTAINER LOGIN */
+.container_login{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.signup_form{
+/* LOGIN FORM */
+.login_form{
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
-    width: 1100px;
-    height: 620px;
+    width: 1000px;
+    height: 500px;
 }
 
-/* SIGNUP BACK BUTTON */
-.signup_button_back{
+/* LOGIN CHOICE */
+.login_choice{
+    display: flex;
+    justify-content: space-between; 
+}
+
+/* LOGIN BUTTON BACK */
+.login_button_back{
     display: flex;
 }
 
-.signup_button_back button{
+.login_button_back button{
     color: var(--color-text-white);
     border: none;
     outline: none;
@@ -122,14 +124,26 @@ input:valid:not(:placeholder-shown){
     cursor: pointer;
 }
 
-/* SIGNUP TEXT */
-.signup_fill{
-    margin: 10px 0;
+.login_button_back a{
+    color: var(--color-text-white);
 }
 
-/* SIGNUP EMAIL PASSWORD */
-.signup_email_password{
-    font-family: var(--font-dmsan);
+/* LOGIN FORM SIGNUP */
+.login_form_signup p{
+    color: var(--color-text-white);
+}
+
+.login_form_signup a{
+    color: var(--color-text-yellow);
+}
+
+/* LOGIN CONTINUE */
+.login_continue{
+    margin: 5px 0;
+}
+
+/* LOGIN EMAIL PASSWORD */
+.login_email_password{
     display: flex;
     flex-direction: column;
 }
@@ -145,13 +159,25 @@ input:valid:not(:placeholder-shown){
     left: 13px;
 }
 
-/* SIGNING AGREE */
-.signing_agree{
+/* LOGIN CHECKBOX FORGOT */
+.login_checkbox_forgot{
     display: flex;
+    justify-content: space-between;
     margin: 15px 0;
 }
 
-/* LOGIN BUTTON */
+/* LOGIN CHECKBOX */
+.login_checkbox{
+    display: flex;
+    gap: 5px;
+}
+
+.login_checkbox input{
+    width: 20px;
+    height: 20px;
+}
+
+/* LOGIN BUTTON DOWN */
 .login_button_down{
     letter-spacing: 2px;
     font-size: 17px;
@@ -162,20 +188,37 @@ input:valid:not(:placeholder-shown){
     padding: 8px 0;
     border-radius: 7px;
     color: var(--color-text-black);
-    border: 1px solid black;
     transition: 0.5s;
 }
 
 .login_button_down:hover{
-    background-color: var(--color-background-black);
+    background-color:var(--color-background-black);
     color: var(--color-text-white);
     border: 1px solid #e4c290;
     cursor: pointer;
     background: transparent;
 }
 
-/* LOGIN */
-.login{
-    margin-top: 15px;
-    text-align: center;
+/* LOGIN SOCIAL MEDIA */
+.login_social_media{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text-white);
+}
+
+.login_social_media p{
+    width:30%;
+    height: 1px;
+    background-color: white;
+}
+
+/* LOGIN ICON */
+.login_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }

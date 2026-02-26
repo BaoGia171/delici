@@ -60,7 +60,7 @@
 .main_container_slide{
 overflow: hidden;
 position: relative;
-    height: 95vh;
+height: 95vh;
 }
 .container_slide{    
     animation: slide 15s linear infinite;
@@ -84,10 +84,11 @@ position: relative;
     }
 }
 .main_container_image {
-    background-image: url(./img/banner/banner-1.jpg);
+    background-image: url(../../img/banner/banner-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 100%;
+    height: 95vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -95,10 +96,11 @@ position: relative;
     
 }
 .main_container_image_1{
-    background-image: url(./img/banner/banner-3.jpg);
+    background-image: url(../../img/banner/banner-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 100%;
+    height: 95vh;
     position: absolute;
     top: 0;
     left: 100%;
@@ -163,10 +165,10 @@ position: relative;
 .main_container_menu_title,
 .main_container_exp_title,
 .main_container_team_title,
-.main_streangth_title {
+.main_strength_title {
     flex-direction: column;
 }
-.main_streangth_title,
+.main_strength_title,
 .main_container_team_title,
 .main_container_menu_title {
     padding-bottom: 50px;
@@ -254,7 +256,7 @@ position: relative;
     left: 0;
     height: 1px;
     width: 0;
-    background-color: var(--color_background_yellow);
+    background-color: var(--color-background-yellow);
     transition: 0.5s;
 }
 .main_view a:hover::after{
@@ -295,7 +297,7 @@ position: relative;
 }
 
 /* MAIN CONTAINER MENU */
-.main_conrainer_menu{
+.main_container_menu{
     position: relative;
 }
 .slide_right{
@@ -398,18 +400,18 @@ position: relative;
     background-color: var(--color-text-yellow);
 }
 
-.menu_open_tinme {
+.menu_open_time {
     padding: 20px 0 0 0;
     flex-direction: column;
 }
 
-.menu_open_tinme h5 {
+.menu_open_time h5 {
     padding: 20px 0;
     font-size: 17px;
     font-weight: 900;
 }
 
-.menu_open_tinme h5 span {
+.menu_open_time h5 span {
     color: var(--color-text-yellow);
 }
 
@@ -470,11 +472,11 @@ position: relative;
     padding: 5px;
     width: 40px;
     height: 40px;
-    background-color: var(--color_background_black);
+    background-color: var(--color-background-black);
     border-radius: 50%;
 }
  li:hover a svg{
-    background-color: var(--color_background_yellow);
+    background-color: var(--color-background-yellow);
 }
 .chef_information {
     width: 85%;
@@ -493,7 +495,7 @@ position: relative;
 /* MAIN CONTAINER EXPERIENCE */
 .main_container_exp {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(./img/banner/background.jpg);
+        url(../../img/banner/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
@@ -568,7 +570,7 @@ position: relative;
     font-size: 50px;
 }
 
-.main_contaienr_daily_order p {
+.main_container_daily_order p {
     font-size: 18px;
     width: 20px;
 }

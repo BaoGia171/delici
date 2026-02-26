@@ -28,7 +28,7 @@
 .main_container_details{
     background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./img/banner/banner-contact.jpg);
+    url(../../img/banner/banner-contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
@@ -103,12 +103,12 @@
     padding: 15px;
 }
 .details_food_button select{
-    background-color: var(--color_background_black);
+    background-color: var(--color-background-black);
     color: var(--color-text-white);
     border: 1px solid white;
 }
 .details_food_button button{
-    background-color: var(--color_background_yellow);
+    background-color: var(--color-background-yellow);
     letter-spacing: 1px;
 }
 .container_reviews{
@@ -141,7 +141,7 @@
 .container_reviews input{
     width: 100%;
     padding: 15px 0 ;
-    background-color: var(--color_background_black);
+    background-color: var(--color-background-black);
     outline: none;
     border-top: none;
     border-left: none;
@@ -180,7 +180,7 @@
     color: var(--color-text-yellow);
     font-weight: 300;
 }
-.reviewer_avarta_rate{
+.reviewer_avata_rate{
     padding: 20px 0;
     display: flex;
     gap: 10px;

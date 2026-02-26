@@ -17,7 +17,7 @@
 .main_container_book{
     background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./img/banner/banner-contact.jpg);
+    url(../../img/banner/banner-contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
@@ -55,7 +55,7 @@
     width: 40%;
     height: 55px;
     height: 55px;
-    background-color: var(--color_background_gray_2);
+    background-color: var(--color-background-gray-2);
     color: var(--color-text-yellow);
     border: 1px solid rgb(65, 65, 65);
     padding: 0 0 0 20px;
@@ -71,7 +71,7 @@
 .reserve_input_down input{
     width: 23.5%;
     height: 55px;
-    background-color: var(--color_background_gray_2);
+    background-color: var(--color-background-gray-2);
     color: var(--color-text-white);
     border: 1px solid rgb(65, 65, 65);
     padding: 0 0 0 20px;
@@ -88,7 +88,7 @@
 .input_for_select select{
     height: 55px;
     width: 100%;
-    background-color: var(--color_background_gray_2);
+    background-color: var(--color-background-gray-2);
     color: var(--color-text-white);
     border: 1px solid rgb(65, 65, 65);
     border-radius: 7px;
@@ -172,7 +172,7 @@ transition: 1s
     transform: translateX(-50%);
     height: 2px;
     width: 0;
-    background-color: var(--color_background_yellow);
+    background-color: var(--color-background-yellow);
     transition: 0.5s;
     
 }

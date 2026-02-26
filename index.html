@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/global.css" />
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="./css/global.css" />
         <link rel="stylesheet" href="./css/custom.css" />
+        <link rel="stylesheet" href="./css/page.css/index.css" />
         <title>Home</title>
     </head>
     <body>
@@ -23,52 +23,55 @@
                         <div class="header_menu flex_center">
                             <ul class="menu_list flex_center">
                                 <li>
-                                    <a class="active" href="index.html">HOME</a>
+                                    <a class="active" class="active" href="index.html">HOME</a>
                                 </li>
 
                                 <li>
-                                    <a href="menu.html">MENU</a>
-                                    <ul class="menu_hover bg_black">
-                                        <div class="menu_hover_img">
-                                            <li>
-                                                <img
-                                                    src="./img/menu/menu-food-1.jpg"
-                                                    alt=""
-                                                /><a href="./menu.html"
-                                                    >Order Food</a
+                                    <a class="menu_list_hover" href="menu.html">MENU</a>
+                                    <div class="menu_hover">
+                                        <ul class="menu_hover_img bg_black">
+                                            <li class="li_down_line">
+                                                <a href="./menu.html"
+                                                    ><img
+                                                        src="./img/menu/menu-food-1.jpg"
+                                                        alt=""
+                                                    />
+                                                    Order Food</a
                                                 >
                                             </li>
-                                            <li>
-                                                <img
-                                                    src="./img/menu/menu-food-2.jpg"
-                                                    alt=""
-                                                /><a href="partymenu.html"
-                                                    >Party Menu</a
+                                            <li class="li_down_line">
+                                                <a href="partymenu.html"
+                                                    ><img
+                                                        src="./img/menu/menu-food-2.jpg"
+                                                        alt=""
+                                                    />
+                                                    Party Menu</a
                                                 >
                                             </li>
-                                            <li>
-                                                <img
-                                                    src="./img/menu-wine/wine-banner.jpg"
-                                                    alt=""
-                                                /><a href="./winemenu.html"
-                                                    >Wine</a
+                                            <li class="li_down_line">
+                                                <a href="./winemenu.html"
+                                                    ><img
+                                                        src="./img/menu-wine/wine-banner.jpg"
+                                                        alt=""
+                                                    />
+                                                    Wine</a
                                                 >
                                             </li>
-                                        </div>
-                                    </ul>
+                                        </ul>
+                                    </div>
                                 </li>
 
                                 <li>
-                                    <a href="about.html">ABOUT</a>
+                                    <a class="menu_list_hover" href="about.html">ABOUT</a>
                                 </li>
                                 <li>
-                                    <a href="reservation.html">RESERVATION</a>
+                                    <a class="menu_list_hover" href="reservation.html">RESERVATION</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">CONTACT</a>
+                                    <a class="menu_list_hover" href="contact.html">CONTACT</a>
                                 </li>
                                 <li>
-                                    <a href="lookup.html">LOOKUP</a>
+                                    <a class="menu_list_hover" href="lookup.html">LOOKUP</a>
                                 </li>
                             </ul>
                         </div>
@@ -91,23 +94,21 @@
                             <p>+84 9877499388</p>
                         </div>
                         <div class="header_cart_shopping">
-                            <button type="button">
-                                <a href="cart.html"
-                                    ><svg
-                                        width="25"
-                                        height="25"
-                                        fill="white"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 640 640"
-                                    >
-                                        <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                        <path
-                                            d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"
-                                        />
-                                    </svg>
-                                    <span>0</span>
-                                </a>
-                            </button>
+                            <a href="cart.html" class="btn"
+                                ><svg
+                                    width="25"
+                                    height="25"
+                                    fill="white"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"
+                                >
+                                    <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"
+                                    />
+                                </svg>
+                                <span>0</span>
+                            </a>
                         </div>
                         <div class="header_login_signup">
                             <a href="login.html">Login</a> /
@@ -125,7 +126,7 @@
                 <div class="container_slide">
                     <div class="main_container_image flex_center">
                         <div class="main_container_title flex_center">
-                            <span class="title font_dmsan"
+                            <span class="title font_dm_san"
                                 >Amazing & delicious</span
                             >
                             <img
@@ -144,7 +145,7 @@
                     </div>
                     <div class="main_container_image_1 flex_center">
                         <div class="main_container_title flex_center">
-                            <span class="title font_dmsan"
+                            <span class="title font_dm_san"
                                 >Amazing & delicious</span
                             >
                             <img
@@ -195,7 +196,7 @@
                         />
                         <div class="main_menu_img">
                             <img
-                                class="ob_cover"
+                                class="obj_cover"
                                 src="./img/menu/menu-party.jpg"
                                 alt=""
                             />
@@ -213,7 +214,7 @@
                         />
                         <div class="main_menu_img">
                             <img
-                                class="ob_cover"
+                                class="obj_cover"
                                 src="./img/menu/oder-food.jpg"
                                 alt=""
                             />
@@ -231,7 +232,7 @@
                         />
                         <div class="main_menu_img">
                             <img
-                                class="ob_cover"
+                                class="obj_cover"
                                 src="./img/menu-wine/vip-8.jpg"
                                 alt=""
                             />
@@ -244,7 +245,7 @@
                 </div>
             </div>
             <div class="main_container_strength bg_gray padding">
-                <div class="main_streangth_title flex_center">
+                <div class="main_strength_title flex_center">
                     <span class="yellow_title text_yellow"
                         >FLAVORS FOR ROYALTY</span
                     >
@@ -306,7 +307,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main_conrainer_menu bg_black padding">
+            <div class="main_container_menu bg_black padding">
                 <div class="slide_right">
                     <img src="./img/slide/bg-2.png" alt="" />
                 </div>
@@ -505,8 +506,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="menu_open_tinme text_white flex_center">
-                    <h5 class="font_dmsan">
+                <div class="menu_open_time text_white flex_center">
+                    <h5 class="font_dm_san">
                         During winter daily from <span>7:00 pm</span> to
                         <span>9:00 pm</span>
                     </h5>
@@ -783,25 +784,25 @@
                     </div>
                 </div>
                 <div class="main_container_stats flex_center">
-                    <div class="main_contaienr_daily_order flex_center">
+                    <div class="main_container_daily_order flex_center">
                         <div class="amount_total">
                             <span class="text_white">150+</span>
                         </div>
                         <p class="text_yellow">DAILY ORDER</p>
                     </div>
-                    <div class="main_contaienr_daily_order flex_center">
+                    <div class="main_container_daily_order flex_center">
                         <div class="amount_total">
                             <span class="text_white">82+</span>
                         </div>
                         <p class="text_yellow">SPECIAL DISH</p>
                     </div>
-                    <div class="main_contaienr_daily_order flex_center">
+                    <div class="main_container_daily_order flex_center">
                         <div class="amount_total">
                             <span class="text_white">50+</span>
                         </div>
                         <p class="text_yellow">EXPERT CHEF</p>
                     </div>
-                    <div class="main_contaienr_daily_order flex_center">
+                    <div class="main_container_daily_order flex_center">
                         <div class="amount_total">
                             <span class="text_white">20+</span>
                         </div>
@@ -816,12 +817,12 @@
             <div class="footer">
                 <div class="container_main_footer flex_center">
                     <div class="footer_menu">
-                        <ul class="text_gray flex_center">
-                            <li><a href=""></a>HOME</li>
-                            <li><a href=""></a>MENUS</li>
-                            <li><a href=""></a>ABOUT US</li>
-                            <li><a href=""></a>OUR CHEFS</li>
-                            <li><a href=""></a>CONTACT</li>
+                        <ul class="flex_center">
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">MENUS</a></li>
+                            <li><a href="">ABOUT US</a></li>
+                            <li><a href="">OUR CHEFS</a></li>
+                            <li><a href="">CONTACT</a></li>
                         </ul>
                     </div>
                     <div class="footer_menu_mid">
@@ -834,7 +835,7 @@
                         </div>
                         <div class="footer_menu_logo">
                             <div class="footer_logo_img">
-                                <img src="./img/logo/logo.png" alt="" />
+                                <img src="./img/logo/logo.png" alt="Delici Restaurant Logo" />
                             </div>
 
                             <div class="footer_address text_gray">
@@ -894,12 +895,12 @@
                         </div>
                     </div>
                     <div class="footer_menu">
-                        <ul class="text_gray flex_center">
-                            <li><a href=""></a>FACEBOOK</li>
-                            <li><a href=""></a>TWITTER</li>
-                            <li><a href=""></a>INSTAGRAM</li>
-                            <li><a href=""></a>YOUTUBE</li>
-                            <li><a href=""></a>GOOGLE MAP</li>
+                        <ul class="flex_center">
+                            <li><a href="">FACEBOOK</a></li>
+                            <li><a href="">TWITTER</a></li>
+                            <li><a href="">INSTAGRAM</a></li>
+                            <li><a href="">YOUTUBE</a></li>
+                            <li><a href="">GOOGLE MAP</a></li>
                         </ul>
                     </div>
                 </div>

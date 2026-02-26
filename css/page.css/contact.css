@@ -53,7 +53,7 @@
 .main_container_contact {
     background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(./img/banner/banner-contact.jpg);
+        url(../../img/banner/banner-contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
@@ -65,7 +65,7 @@
 
 /* MAIN CONTAINER TIME */
 .main_container_time {
-    background-color: var(--color_background_gray);
+    background-color: var(--color-background-gray);
     display: flex;
     justify-content: space-around;
     padding: 100px 40px;
@@ -136,7 +136,7 @@
 }
 
 .left_side_input button {
-    background-color: var(--color_background_yellow);
+    background-color: var(--color-background-yellow);
     width: 250px;
     height: 60px;
     border: 1px solid var(--color-text-yellow);

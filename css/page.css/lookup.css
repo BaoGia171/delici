@@ -17,7 +17,7 @@
 .main_container_lookup{
     background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./img/banner/banner-contact.jpg);
+    url(../../img/banner/banner-contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
@@ -40,7 +40,7 @@
 /* CONTAINER LOOKUP INPUT */
 .container_lookup_input{
     padding: 50px 0;
-    background-color: var(--color_background_black);
+    background-color: var(--color-background-black);
 }
 
 /* LOOKUP INPUT */

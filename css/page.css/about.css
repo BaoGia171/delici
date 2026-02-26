@@ -20,7 +20,7 @@
 .main_container_about{
     background:
     linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)),
-    url(./img/banner/banner-about.jpg);
+    url(../../img/banner/banner-about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
@@ -103,7 +103,7 @@
 }
 
 .container_chef_award button{
-    background-color: var(--color_background_yellow);
+    background-color: var(--color-background-yellow);
     padding: 20px 150px;
     border: 1px solid var(--color-text-yellow);
     transition: 1s
@@ -223,7 +223,7 @@
     font-family: var(--font-forum);
 }
 
-.main_contaienr_daily_order p{
+.main_container_daily_order p{
     font-weight: 600;
     font-family: var(--font-dmsan);
     font-size:18px;
@@ -297,7 +297,7 @@
 
 .icon img{
     border-radius: 50%;
-    background-color:var(--color_background_gray);
+    background-color:var(--color-background-gray);
 }
 .icon:hover img{
     transform: rotateY(180deg);

@@ -28,7 +28,7 @@
 .main_container_cart{
     background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./img/banner/banner-contact.jpg);
+    url(../../img/banner/banner-contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
@@ -75,7 +75,7 @@
 }
 .cart_totals_button button{
     width: 100%;
-    background-color: var(--color_background_yellow);
+    background-color: var(--color-background-yellow);
     padding: 20px 50px;
     transition: 1s;
 }

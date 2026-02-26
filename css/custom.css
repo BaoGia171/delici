@@ -1,14 +1,14 @@
 .bg_black{
-    background-color: var(--color_background_black);
+    background-color: var(--color-background-black);
 }
 .bg_gray{
-    background-color: var(--color_background_gray);
+    background-color: var(--color-background-gray);
 }
 .bg_gray_2{
-    background-color: var(--color_background_gray_2);
+    background-color: var(--color-background-gray-2);
 }
 .bg_yellow{
-    background-color: var(--color_background_yellow);
+    background-color: var(--color-background-yellow);
 }
 .text_white{
     color: var(--color-text-white);
@@ -19,13 +19,13 @@
 .text_gray{
     color: var(--color-text-gray);
 }
-.font_dmsan{
+.font_dm_san{
     font-family: var(--font-dmsan);
 }
 .font_forum{
     font-family: var(--font-forum);
 }
-.ob_cover{
+.obj_cover{
     object-fit: cover;
 }
 /* <!-- ------MAIN------ --> */

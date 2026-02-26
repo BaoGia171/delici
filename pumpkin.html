@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/global.css" />
-        <link rel="stylesheet" href="./detailsfood.css" />
+        <link rel="stylesheet" href="./css/page.css/detailsfood.css">
         <link rel="stylesheet" href="./css/custom.css" />
         <title>Details</title>
     </head>
@@ -15,74 +15,99 @@
                 <div class="header flex_between">
                     <div class="header_left flex_center">
                         <div class="header_logo">
-                            <a href="./index.html"><img src="./img/logo/logo.png" alt="" /></a>
+                            <a href="./index.html"
+                                ><img src="./img/logo/logo.png" alt=""
+                            /></a>
                         </div>
                         <div class="header_menu flex_center">
                             <ul class="menu_list flex_center">
                                 <li>
-                                    <a  href="index.html">HOME</a>
+                                    <a class="menu_list_hover" class="active" href="index.html">HOME</a>
                                 </li>
 
                                 <li>
-                                    <a class="active" href="menu.html">MENU</a>
-                                    <ul class="menu_hover bg_black">
-                                        <div class="menu_hover_img">
-                                        <li><img src="./img/menu/menu-food-1.jpg" alt=""><a href="./menu.html">Order Food</a></li>
-                                        <li><img src="./img/menu/menu-food-2.jpg" alt=""><a href="partymenu.html">Party Menu</a></li>
-                                        <li><img src="./img/menu-wine/wine-banner.jpg" alt=""><a href="./winemenu.html">Wine</a></li>
-                                        </div>
-                                    </ul>
+                                    <a class="menu_list_hover" href="menu.html">MENU</a>
+                                    <div class="menu_hover">
+                                        <ul class="menu_hover_img bg_black">
+                                            <li class="li_down_line">
+                                                <a href="./menu.html"
+                                                    ><img
+                                                        src="./img/menu/menu-food-1.jpg"
+                                                        alt=""
+                                                    />
+                                                    Order Food</a
+                                                >
+                                            </li>
+                                            <li class="li_down_line">
+                                                <a href="partymenu.html"
+                                                    ><img
+                                                        src="./img/menu/menu-food-2.jpg"
+                                                        alt=""
+                                                    />
+                                                    Party Menu</a
+                                                >
+                                            </li>
+                                            <li class="li_down_line">
+                                                <a href="./winemenu.html"
+                                                    ><img
+                                                        src="./img/menu-wine/wine-banner.jpg"
+                                                        alt=""
+                                                    />
+                                                    Wine</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                    
-                                
+
                                 <li>
-                                    <a href="about.html">ABOUT</a>
+                                    <a class="menu_list_hover" href="about.html">ABOUT</a>
                                 </li>
                                 <li>
-                                    <a href="reservation.html">RESERVATION</a>
+                                    <a class="menu_list_hover" href="reservation.html">RESERVATION</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">CONTACT</a>
+                                    <a class="menu_list_hover" href="contact.html">CONTACT</a>
                                 </li>
                                 <li>
-                                    <a href="lookup.html">LOOKUP</a>
+                                    <a class="menu_list_hover" href="lookup.html">LOOKUP</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="header_right flex_center">
                         <div class="header_phone flex_center">
-                            <svg
-                                width="25"
-                                height="25"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 640"
-                            >
-                                <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path
-                                    d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"
-                                />
-                            </svg>
+                            <div class="header_phone_icon flex_center">
+                                <svg
+                                    width="25"
+                                    height="25"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"
+                                >
+                                    <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"
+                                    />
+                                </svg>
+                            </div>
                             <p>+84 9877499388</p>
                         </div>
                         <div class="header_cart_shopping">
-                            <button type="button">
-                                <a href="cart.html"
-                                    ><svg
-                                        width="25"
-                                        height="25"
-                                        fill="white"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 640 640"
-                                    >
-                                        <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                        <path
-                                            d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"
-                                        />
-                                    </svg>
-                                    <span>0</span>
-                                </a>
-                            </button>
+                            <a href="cart.html" class="btn"
+                                ><svg
+                                    width="25"
+                                    height="25"
+                                    fill="white"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"
+                                >
+                                    <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"
+                                    />
+                                </svg>
+                                <span>0</span>
+                            </a>
                         </div>
                         <div class="header_login_signup">
                             <a href="login.html">Login</a> /
@@ -222,7 +247,7 @@
 
                     <div class="food_reviewer">
                         <div class="food_down_line"></div>
-                        <div class="reviewer_avarta_rate">
+                        <div class="reviewer_avata_rate">
                             <div class="food_reviewer_img">
                                 <img src="./img/avarta/man-1.jpg" alt="" />
                             </div>
@@ -258,7 +283,7 @@
                         <div class="food_down_line"></div>
                     </div>
                     <div class="food_reviewer">
-                        <div class="reviewer_avarta_rate">
+                        <div class="reviewer_avata_rate">
                             <div class="food_reviewer_img">
                                 <img src="./img/avarta/man-2.jpg" alt="" />
                             </div>
@@ -297,7 +322,7 @@
                         <div class="food_down_line"></div>
                     </div>
                     <div class="food_reviewer">
-                        <div class="reviewer_avarta_rate">
+                        <div class="reviewer_avata_rate">
                             <div class="food_reviewer_img">
                                 <img src="./img/avarta/man-3.jpg" alt="" />
                             </div>
@@ -336,7 +361,7 @@
                         <div class="food_down_line"></div>
                     </div>
                     <div class="food_reviewer">
-                        <div class="reviewer_avarta_rate">
+                        <div class="reviewer_avata_rate">
                             <div class="food_reviewer_img">
                                 <img src="./img/avarta/women-1.jpg" alt="" />
                             </div>
@@ -375,7 +400,7 @@
                         <div class="food_down_line"></div>
                     </div>
                     <div class="food_reviewer">
-                        <div class="reviewer_avarta_rate">
+                        <div class="reviewer_avata_rate">
                             <div class="food_reviewer_img">
                                 <img src="./img/avarta/women-2.jpg" alt="" />
                             </div>
